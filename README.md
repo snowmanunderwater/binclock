@@ -1,7 +1,3 @@
 # binclock - Binary clock
 
-## Usage
-
-```
-
-```
+![hr.png](https://raw.githubusercontent.com/snowmanunderwater/binclock/master/binclock.png)
