@@ -28,8 +28,21 @@ def draw_clock(clock, cur_time, window):
         window.addch(4+int(height/2), x+int(width/2), char)
 
 
-def rotated_ccw(array_2d):
-    list_of_tuples = zip(*array_2d[::1])
+def rotated_ccw(clock):
+    """
+    Rotate 2d_array(clock).
+
+    [0, 0, 0, 0]    [0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0] => [0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0]    [0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0]    [0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0]
+    [0, 0, 0, 0]
+    [0, 0, 0, 0]
+    [0, 0, 0, 0]
+    
+    """
+    list_of_tuples = zip(*clock[::1])
     return [list(elem) for elem in list_of_tuples]
 
 
