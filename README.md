@@ -1,5 +1,13 @@
 # binclock - Binary clock
 
+```
+ |  |  | < 8
+ | || || < 4
+|| || || < 2
+|| || || < 1
+HH:MM:SS
+```
+
 ## binclock.py - default CLI
 
 ![binclock.png](https://raw.githubusercontent.com/snowmanunderwater/binclock/master/binclock.png)
