@@ -59,6 +59,18 @@ def rotated_ccw(clock):
 
 
 def draw_clock(clock):
+    """
+    https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
+
+          +----------- font effects (0 - normal, 1 - bold, 3 - italic ...)
+          | +--------- foreground color (30-37)
+          | |  +------ background color (40-47)
+          | |  |  +--- character
+          | |  |  |
+          v V  V  V 
+    '\x1b[1;31;40m|\x1b[0m'
+    """
+
     for row in clock:
         for element in row:
             if element == 0:
