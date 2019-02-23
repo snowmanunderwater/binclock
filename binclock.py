@@ -62,11 +62,11 @@ def draw_clock(clock):
     for row in clock:
         for element in row:
             if element == 0:
-                print('\x1b[0;30;40m|\x1b[0m', end='')
+                print(' ', end='')
             else:
-                print('\x1b[1;31;40m|\x1b[0m', end='')
+                print('\x1b[1;31;m|\x1b[0m', end='')
         print()
-    print('\x1b[0;33;40m%s\x1b[0m' % (cur_time))
+    print('\x1b[0;33;m%s\x1b[0m' % (cur_time))
 
 
 if __name__ == '__main__':
